@@ -6,10 +6,18 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\RPG-Area\Controllers\" />
+    <Folder Include="Areas\RPG-Area\Data\" />
+    <Folder Include="Areas\RPG-Area\Models\" />
+    <Folder Include="Areas\RPG-Area\Views\" />
   </ItemGroup>
 
 </Project>

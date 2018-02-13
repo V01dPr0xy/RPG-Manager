@@ -1,0 +1,11 @@
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG-Manager.deps.json
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG-Manager.runtimeconfig.json
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG-Manager.runtimeconfig.dev.json
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG-Manager.dll
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.csprojResolveAssemblyReference.cache
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.csproj.CoreCompileInputs.cache
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.AssemblyInfoInputs.cache
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.AssemblyInfo.cs
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG-Manager.pdb
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.dll
+C:\Users\Vokundiiv\Documents\PRO150\RPGManager\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG-Manager.pdb
