@@ -14,10 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\RPG-Area\Controllers\" />
-    <Folder Include="Areas\RPG-Area\Data\" />
-    <Folder Include="Areas\RPG-Area\Models\" />
-    <Folder Include="Areas\RPG-Area\Views\" />
+    <Folder Include="Areas\RPGArea\Controllers\" />
+    <Folder Include="Areas\RPGArea\Data\" />
+    <Folder Include="Areas\RPGArea\Views\" />
   </ItemGroup>
 
 </Project>

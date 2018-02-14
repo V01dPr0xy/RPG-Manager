@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Manager", "RPG-Manager\RPG-Manager.csproj", "{736BEDB8-049C-4244-A041-3D5478880DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPG_Manager", "RPG-Manager\RPG_Manager.csproj", "{736BEDB8-049C-4244-A041-3D5478880DBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
