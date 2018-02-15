@@ -14,8 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\RPGArea\Controllers\" />
-    <Folder Include="Areas\RPGArea\Data\" />
     <Folder Include="Areas\RPGArea\Views\" />
   </ItemGroup>
 

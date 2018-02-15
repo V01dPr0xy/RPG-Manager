@@ -13131,11 +13131,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\RPGManager\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
+      "projectUniqueName": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\Projects\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
       "projectName": "RPG_Manager",
-      "projectPath": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\RPGManager\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
+      "projectPath": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\Projects\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
       "packagesPath": "C:\\Users\\Vokundiiv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\RPGManager\\RPG-Manager\\RPG-Manager\\RPG-Manager\\obj\\",
+      "outputPath": "C:\\Users\\Vokundiiv\\Documents\\PRO150\\Projects\\RPG-Manager\\RPG-Manager\\RPG-Manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

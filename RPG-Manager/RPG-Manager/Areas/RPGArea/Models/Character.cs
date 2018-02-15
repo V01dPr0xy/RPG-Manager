@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,23 +9,47 @@ namespace RPG_Manager.Areas.RPGArea.Models
 {
     public class Character
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int CharacterID { get; set; }
+
+
         public Character() { }
 
+        [Required]
+        [StringLength(50)]
         public string Name { get; set; }
+        [Required]
         public int Level { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Class { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Background { get; set; }
+        [Required]
+        [StringLength(50)]
         public string PlayerName { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Race { get; set; }
+        [Required]
+        [StringLength(50)]
         public string Alignment { get; set; }
-        public int Experience_Points { get; set; }
+        [Required]
+        public int XP { get; set; }
 
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public int Constitution { get; set; }
-        public int Intelligence { get; set; }
-        public int Wisdom { get; set; }
-        public int Charisma { get; set; }
+        [Required]
+        public int STR { get; set; }
+        [Required]
+        public int DEX { get; set; }
+        [Required]
+        public int CON { get; set; }
+        [Required]
+        public int INT { get; set; }
+        [Required]
+        public int WIS { get; set; }
+        [Required]
+        public int CHA { get; set; }
 
         public bool Inspiration { get; set; }
         public int ProficiencyBonus { get; set; }
@@ -31,19 +57,26 @@ namespace RPG_Manager.Areas.RPGArea.Models
         public SavingThrows SavingThrow { get; set; }
         public Skills Skill { get; set; }
 
+        [Required]
         public int ArmorClass { get; set; }
+        [Required]
         public int Initiative { get; set; }
+        [Required]
         public int Speed { get; set; }
+        [Required]
         public int HitPointsMax { get; set; }
+        [Required]
         public int HitPointsCurrent { get; set; }
         public int HitPointsTemporary { get; set; }
-        public string TotalHitDie { get; set; }
+        [Required]
+        public HitDice HitDie { get; set; }
+        [Required]
         public string HitDice { get; set; }
         public int DeathSaves_Successes { get; set; }
         public int DeathSaves_Failures { get; set; }
 
-        public List<Action> Attacks{ get; set; }
-        public List<Action> SpellCastings { get; set; }
+        public ICollection<Action> Attacks { get; set; }
+        public ICollection<Action> SpellCastings { get; set; }
 
         public string PersonalityTraits { get; set; }
         public string Ideals { get; set; }
@@ -53,23 +86,27 @@ namespace RPG_Manager.Areas.RPGArea.Models
         public string Features{ get; set; }
         public string Traits { get; set; }
 
-        public List<string> Cantrips { get; set; }
+        //public ICollection<string> Cantrips { get; set; }
 
-        public List<Spell> SpellsKnown { get; set; }
+        public ICollection<Spell> SpellsKnown { get; set; }
 
+        [Required]
         public int Age { get; set; }
+        [Required]
         public Height Height { get; set; }
+        [Required]
         public int Weight { get; set; }
+        [Required]
         public string EyeColor { get; set; }
+        [Required]
         public string Skin { get; set; }
+        [Required]
         public string Hair { get; set; }
         public string Appearance { get; set; }
-        public List<string> Allies{ get; set; }
-        public List<string> Organizations { get; set; }
+        //public ICollection<string> Allies{ get; set; }
+        //public ICollection<string> Organizations { get; set; }
         public string Backstory { get; set; }
-        public List<Item> Treasure { get; set; }
-
-
+        public ICollection<Item> Treasure { get; set; }
 
         [Flags]
         public enum SavingThrows

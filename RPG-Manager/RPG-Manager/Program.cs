@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using RPG_Manager.Areas.RPGArea.Data;
 
 namespace RPG_Manager
 {
@@ -14,7 +16,24 @@ namespace RPG_Manager
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+
+            using(var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+
+                try
+                {
+                    var con = services.GetRequiredService<CharacterContext>();
+                    DBInit.Init(con);
+                }
+                catch (Exception ex)
+                {
+                    var log = services.GetRequiredService<ILogger<Program>>();
+                    log.LogError(ex, "An error occurred whilst seeding the database");
+                }
+            }
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
