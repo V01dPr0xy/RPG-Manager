@@ -13122,8 +13122,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bradly Holland-Hedge\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\Vokundiiv\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13132,20 +13131,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bradly Holland-Hedge\\Documents\\GitHub\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
+      "projectUniqueName": "C:\\Users\\Vokundiiv\\Desktop\\javascript-winter\\MTM282_ExpressServicesProjekt\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
       "projectName": "RPG_Manager",
-      "projectPath": "C:\\Users\\Bradly Holland-Hedge\\Documents\\GitHub\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
-      "packagesPath": "C:\\Users\\Bradly Holland-Hedge\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bradly Holland-Hedge\\Documents\\GitHub\\RPG-Manager\\RPG-Manager\\RPG-Manager\\obj\\",
+      "projectPath": "C:\\Users\\Vokundiiv\\Desktop\\javascript-winter\\MTM282_ExpressServicesProjekt\\RPG-Manager\\RPG-Manager\\RPG-Manager\\RPG_Manager.csproj",
+      "packagesPath": "C:\\Users\\Vokundiiv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vokundiiv\\Desktop\\javascript-winter\\MTM282_ExpressServicesProjekt\\RPG-Manager\\RPG-Manager\\RPG-Manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bradly Holland-Hedge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\Vokundiiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
