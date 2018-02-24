@@ -12,10 +12,14 @@ namespace RPG_Manager.Areas.RPGArea.Data
         public CharacterContext(DbContextOptions<CharacterContext> options) : base(options) { }
 
         public DbSet<Character> Character { get; set; }
+        public DbSet<Account> Account { get; set; }
+        public DbSet<Campaign> Campaign { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
             mb.Entity<Character>().ToTable("Character");
+            mb.Entity<Account>().ToTable("Account");
+            mb.Entity<Campaign>().ToTable("Campaign");
         }
     }
 }

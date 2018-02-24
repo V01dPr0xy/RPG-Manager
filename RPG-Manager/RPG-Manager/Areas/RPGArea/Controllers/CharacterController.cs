@@ -45,7 +45,7 @@ namespace RPG_Manager.Areas.RPGArea.Controllers
 
         public async Task<IActionResult> EditCharacter(int ID)
         {
-            return View(await Repo.GetCharacter(ID));
+            return View(await Repo.GetCharacterAsync(ID));
         }
 
         [HttpPost]
@@ -62,7 +62,7 @@ namespace RPG_Manager.Areas.RPGArea.Controllers
 
         public async Task<IActionResult> DetailCharacter(int ID)
         {
-            return View(await Repo.GetCharacter(ID));
+            return View(await Repo.GetCharacterAsync(ID));
         }
         
         public IActionResult DeleteCharacter(int ID)
