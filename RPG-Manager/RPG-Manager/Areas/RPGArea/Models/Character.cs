@@ -106,7 +106,7 @@ namespace RPG_Manager.Areas.RPGArea.Models
         //public ICollection<string> Allies{ get; set; }
         //public ICollection<string> Organizations { get; set; }
         public string Backstory { get; set; }
-        public ICollection<Item> Treasure { get; set; }
+        public ICollection<Equipment> Treasure { get; set; }
 
         [Flags]
         public enum SavingThrows
@@ -143,6 +143,15 @@ namespace RPG_Manager.Areas.RPGArea.Models
         }
     }
 
+    public class ValueType
+    {
+        public int Value_CopperPiece { get; set; }
+        public int Value_SilverPiece { get; set; }
+        public int Value_ElectrumPiece { get; set; }
+        public int Value_GoldPiece { get; set; }
+        public int Value_PlatinumPiece { get; set; }
+    }
+
     public class SpellCasting : Action
     {
         public int Damage { get; set; }
@@ -162,13 +171,41 @@ namespace RPG_Manager.Areas.RPGArea.Models
 
     public class Equipment
     {
-        public int CopperPiece { get; set; }
-        public int SilverPiece { get; set; }
-        public int ElectrumPiece { get; set; }
-        public int GoldPiece { get; set; }
-        public int PlatinumPiece { get; set; }
+        public string Name { get; set; }
+        public ValueType VT { get; set; }
+        public int Weight { get; set; }
+        public string Notes  { get; set; }
 
+    }
+
+    public class Armor : Equipment
+    {
+        public int Resistance { get; set; }
+        public bool ACModifiesDex { get; set; }
         public int ArmorClass { get; set; }
+        public bool IsStealthDisadvantage { get; set; }
+        public TimeSpan Don { get; set; }
+        public TimeSpan Doff { get; set; }
+    }
+
+    public class Weapon : Equipment
+    {
+
+        public Damage Dmg { get; set; }
+        public ICollection<string> Properties { get; set; }
+    }    
+
+    public class Damage
+    {
+        public HitDice MaxDmgRoll { get; set; }
+        public DamageTypes DamageType { get; set; }
+    }
+
+    public enum DamageTypes
+    {
+        BLUDGEONING,
+        PIERCING,
+        SLASHING
     }
 
     public class Spell
@@ -183,10 +220,5 @@ namespace RPG_Manager.Areas.RPGArea.Models
     {
         public int Feet { get; set; }
         public int Inches { get; set; }
-    }
-    
-    public class Item
-    {
-
     }
 }
