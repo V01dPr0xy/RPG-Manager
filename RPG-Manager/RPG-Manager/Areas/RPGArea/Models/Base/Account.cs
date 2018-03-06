@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RPG_Manager.Areas.RPGArea.Models.Relationships;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +11,7 @@ namespace RPG_Manager.Areas.RPGArea.Models
     public class Account
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int Account_ID { get; set; }
 
         public string Name { get; set; }
@@ -16,6 +19,7 @@ namespace RPG_Manager.Areas.RPGArea.Models
         public string Password { get; set; }
         //public object Image { get; set; }
         public ICollection<Character> Characters { get; set; }
+        public ICollection<Relationships_CampaignAndCharacter> CampaignRelationships { get; set; }
         public string Email { get; set; }
     }
 }

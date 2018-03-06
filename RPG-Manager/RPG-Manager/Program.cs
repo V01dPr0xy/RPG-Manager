@@ -5,10 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RPG_Manager.Areas.RPGArea.Data;
+using RPG_Manager.Areas.RPGArea.Models;
 
 namespace RPG_Manager
 {
@@ -18,14 +20,17 @@ namespace RPG_Manager
         {
             var host = BuildWebHost(args);
 
-            using(var scope = host.Services.CreateScope())
+            using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
 
                 try
                 {
                     var con = services.GetRequiredService<CharacterContext>();
-                    DBInit.Init(con);
+                    var UM = services.GetRequiredService<UserManager<ApplicationUser>>();
+                    var RM = services.GetRequiredService<RoleManager<IdentityRole>>();
+
+                    DBInit.Init(con, UM, RM);
                 }
                 catch (Exception ex)
                 {

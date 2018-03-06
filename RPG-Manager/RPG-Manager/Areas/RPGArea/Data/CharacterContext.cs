@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using RPG_Manager.Areas.RPGArea.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RPG_Manager.Areas.RPGArea.Data
 {
-    public class CharacterContext : DbContext
+    public class CharacterContext : IdentityDbContext<ApplicationUser>
     {
         public CharacterContext(DbContextOptions<CharacterContext> options) : base(options) { }
 
@@ -17,6 +18,7 @@ namespace RPG_Manager.Areas.RPGArea.Data
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
+            base.OnModelCreating(mb);
             mb.Entity<Character>().ToTable("Character");
             mb.Entity<Account>().ToTable("Account");
             mb.Entity<Campaign>().ToTable("Campaign");

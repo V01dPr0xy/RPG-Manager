@@ -54,7 +54,7 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
         public void DeleteCharacter(int ID)
         {
             foreach (var c in CC.Character)
-                if (c.CharacterID == ID)
+                if (c.ID == ID)
                     CC.Character.Remove(c);
             CC.SaveChanges();
         }
@@ -99,12 +99,12 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
 
         public Character GetCharacter(int CharacterID)
         {
-            return CC.Character.Single(c => c.CharacterID == CharacterID);
+            return CC.Character.Single(c => c.ID == CharacterID);
         }
 
         public async Task<Character> GetCharacterAsync(int CharacterID)
         {
-            return await CC.Character.SingleAsync(c => c.CharacterID == CharacterID);
+            return await CC.Character.SingleAsync(c => c.ID == CharacterID);
         }
 
         public async Task<List<Account>> List_Account()
