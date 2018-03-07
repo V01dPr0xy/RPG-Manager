@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RPG_Manager.Areas.RPGArea.Data;
 using RPG_Manager.Areas.RPGArea.Models;
+using RPG_Manager.Areas.RPGArea.Models.Authorizational_Classes;
 
 namespace RPG_Manager.Areas.RPGArea.Datasources
 {
@@ -17,9 +18,9 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
             CC = cC;
         }
 
-        public void AddAccount(Account a)
+        public void AddAccount(Register r)
         {
-            CC.Account.Add(a);
+            CC.Account.Add(r);
             CC.SaveChanges();
         }
 
@@ -59,7 +60,7 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
             CC.SaveChanges();
         }
 
-        public void EditAccount(Account a)
+        public void EditAccount(Register a)
         {
             CC.Account.Update(a);
             CC.SaveChanges();
@@ -77,12 +78,12 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
             CC.SaveChanges();
         }
 
-        public Account GetAccount(int AccountID)
+        public Register GetAccount(int AccountID)
         {
             return CC.Account.Single(a => a.Account_ID == AccountID);
         }
 
-        public async Task<Account> GetAccountAsync(int AccountID)
+        public async Task<Register> GetAccountAsync(int AccountID)
         {
             return await CC.Account.SingleAsync(a => a.Account_ID == AccountID);
         }
@@ -107,7 +108,7 @@ namespace RPG_Manager.Areas.RPGArea.Datasources
             return await CC.Character.SingleAsync(c => c.ID == CharacterID);
         }
 
-        public async Task<List<Account>> List_Account()
+        public async Task<List<Register>> List_Account()
         {
             return await CC.Account.ToListAsync();
         }

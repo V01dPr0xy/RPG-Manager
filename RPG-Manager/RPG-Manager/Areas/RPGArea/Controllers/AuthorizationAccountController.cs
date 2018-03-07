@@ -36,12 +36,12 @@ namespace RPG_Manager.Areas.RPGArea.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(RegisterViewModel lvm, string returnURL = null)
+        public async Task<IActionResult> Register(Register lvm, string returnURL = null)
         {
             ViewData["ReturnUrl"] = returnURL;
             if (ModelState.IsValid)
             {
-                var usurper = new ApplicationUser { UserName = lvm.LoginString, Email = lvm.LoginString };
+                var usurper = new ApplicationUser { UserName = lvm.Email, Email = lvm.Email };
                 var result = await _userManager.CreateAsync(usurper, lvm.Password);
                 if (result.Succeeded)
                 {

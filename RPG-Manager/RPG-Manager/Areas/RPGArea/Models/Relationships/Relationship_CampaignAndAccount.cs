@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG_Manager.Areas.RPGArea.Models.Authorizational_Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,6 +13,6 @@ namespace RPG_Manager.Areas.RPGArea.Models.Relationships
         public Campaign Campaign { get; set; }
 
         public int AccountID { get; set; }
-        public Account Account { get; set; }
+        public Register Account { get; set; }
     }
 }

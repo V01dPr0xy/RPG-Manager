@@ -1,4 +1,5 @@
-﻿using RPG_Manager.Areas.RPGArea.Models.Relationships;
+﻿using RPG_Manager.Areas.RPGArea.Models.Authorizational_Classes;
+using RPG_Manager.Areas.RPGArea.Models.Relationships;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,7 +14,7 @@ namespace RPG_Manager.Areas.RPGArea.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Campaign_ID { get; set; }
-        public Account DungeonMaster { get; set; }
+        public Register DungeonMaster { get; set; }
         public ICollection<Relationships_CampaignAndCharacter> CharacterRelationships { get; set; }
         public ICollection<Relationship_CampaignAndAccount> AccountRelationships { get; set; }
         //public Dictionary<Account, string> Log { get; set; }
