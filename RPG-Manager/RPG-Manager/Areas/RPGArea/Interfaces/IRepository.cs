@@ -1,4 +1,5 @@
 ﻿using RPG_Manager.Areas.RPGArea.Models;
+using RPG_Manager.Areas.RPGArea.Models.Authorizational_Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +16,12 @@ namespace RPG_Manager.Areas.RPGArea
         void DeleteCharacter(int ID);
         Task<List<Character>> List_Character();
 
-        Task<Account> GetAccountAsync(int AccountID);
-        Account GetAccount(int AccountID);
-        void AddAccount(Account a);
-        void EditAccount(Account a);
+        Task<Register> GetAccountAsync(int AccountID);
+        Register GetAccount(int AccountID);
+        void AddAccount(Register a);
+        void EditAccount(Register a);
         void DeleteAccount(int AccountID);
-        Task<List<Account>> List_Account();
+        Task<List<Register>> List_Account();
 
         Task<Campaign> GetCampaignAsync(int CampaignID);
         Campaign GetCampaign(int CampaignID);

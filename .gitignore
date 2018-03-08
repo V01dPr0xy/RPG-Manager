@@ -1,6 +1,3 @@
 
-RPG-Manager/.vs/RPG-Manager/v15/Server/sqlite3/storage.ide
-*.ide-shm
-*.ide
-*.ide-wal
-RPG-Manager/.vs/RPG-Manager/v15/.suo
+RPG-Manager/.vs/
+RPG-Manager/RPG-Manager/bin/
