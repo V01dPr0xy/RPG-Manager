@@ -2,6 +2,10 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
+html {
+    background-color: #fff;
+}
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
@@ -20,6 +24,9 @@
 .carousel-inner .item img[src$=".svg"] {
     width: 100%;
 }
+#myCarousel{
+    margin-top: 20px;
+}
 
 /* QR code generator */
 #qrCode {
@@ -32,4 +39,37 @@
     .carousel-caption {
         display: none;
     }
+}
+.navbar-nav{
+    width: 100%;
+}
+.navbar{
+    min-height : 60px;
+    width: 100%;
+}
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-content{
+    float: left;
+    width:33%;
+}
+.navbar-content:hover{
+    background-color: #87ACE5;
+
+}
+.navbar-header{
+    float: none;
+}
+.navbar-text {
+    text-align: center;
+    width: 100%;
+    color: #D6DDFF;
+}
+.navbar-text:hover {
+    text-decoration: none;
+    color: #000064;
 }
