@@ -14,6 +14,9 @@ namespace RPG_Manager.Areas.RPGArea.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Campaign_ID { get; set; }
+        [StringLength(50)]
+        public string Name { get; set; }
+        [Required]
         public Register DungeonMaster { get; set; }
         public ICollection<Relationships_CampaignAndCharacter> CharacterRelationships { get; set; }
         public ICollection<Relationship_CampaignAndAccount> AccountRelationships { get; set; }
