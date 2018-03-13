@@ -13,73 +13,73 @@
         <form asp-action="CreateCharacter">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Name</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Level" class="control-label"></label>
-                <input asp-for="Level" class="form-control" />
+                <label asp-for="Level" class="control-label">Level</label>
+                <input type="number" min="1" asp-for="Level" class="form-control" />
                 <span asp-validation-for="Level" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Class" class="control-label"></label>
+                <label asp-for="Class" class="control-label">Class</label>
                 <input asp-for="Class" class="form-control" />
                 <span asp-validation-for="Class" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Background" class="control-label"></label>
+                <label asp-for="Background" class="control-label">Background</label>
                 <input asp-for="Background" class="form-control" />
                 <span asp-validation-for="Background" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PlayerName" class="control-label"></label>
+                <label asp-for="PlayerName" class="control-label">Player Name</label>
                 <input asp-for="PlayerName" class="form-control" />
                 <span asp-validation-for="PlayerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Race" class="control-label"></label>
+                <label asp-for="Race" class="control-label">Race</label>
                 <input asp-for="Race" class="form-control" />
                 <span asp-validation-for="Race" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Alignment" class="control-label"></label>
+                <label asp-for="Alignment" class="control-label">Alignment</label>
                 <input asp-for="Alignment" class="form-control" />
                 <span asp-validation-for="Alignment" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="XP" class="control-label"></label>
-                <input asp-for="XP" class="form-control" />
+                <label asp-for="XP" class="control-label">XP</label>
+                <input type="number" min="0" asp-for="XP" class="form-control" />
                 <span asp-validation-for="XP" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="STR" class="control-label"></label>
-                <input asp-for="STR" class="form-control" />
+                <label asp-for="STR" class="control-label">STR</label>
+                <input type="number" min="3" asp-for="STR" class="form-control" />
                 <span asp-validation-for="STR" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DEX" class="control-label"></label>
-                <input asp-for="DEX" class="form-control" />
+                <label asp-for="DEX" class="control-label">DEX</label>
+                <input type="number" min="3" asp-for="DEX" class="form-control" />
                 <span asp-validation-for="DEX" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CON" class="control-label"></label>
-                <input asp-for="CON" class="form-control" />
+                <label asp-for="CON" class="control-label">CON</label>
+                <input type="number" min="3" asp-for="CON" class="form-control" />
                 <span asp-validation-for="CON" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="INT" class="control-label"></label>
-                <input asp-for="INT" class="form-control" />
+                <label asp-for="INT" class="control-label">INT</label>
+                <input type="number" min="3" asp-for="INT" class="form-control" />
                 <span asp-validation-for="INT" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="WIS" class="control-label"></label>
-                <input asp-for="WIS" class="form-control" />
+                <label asp-for="WIS" class="control-label">WIS</label>
+                <input type="number" min="3" asp-for="WIS" class="form-control" />
                 <span asp-validation-for="WIS" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CHA" class="control-label"></label>
-                <input asp-for="CHA" class="form-control" />
+                <label asp-for="CHA" class="control-label">CHA</label>
+                <input type="number" min="3" asp-for="CHA" class="form-control" />
                 <span asp-validation-for="CHA" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -90,127 +90,127 @@
                 </div>
             </div>
             <div class="form-group">
-                <label asp-for="ProficiencyBonus" class="control-label"></label>
+                <label asp-for="ProficiencyBonus" class="control-label">Proficiency Bonus</label>
                 <input asp-for="ProficiencyBonus" class="form-control" />
                 <span asp-validation-for="ProficiencyBonus" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SavingThrow" class="control-label"></label>
+                <label asp-for="SavingThrow" class="control-label">Saving Throw</label>
                 <input asp-for="SavingThrow" class="form-control" />
                 <span asp-validation-for="SavingThrow" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Skill" class="control-label"></label>
+                <label asp-for="Skill" class="control-label">Skill</label>
                 <input asp-for="Skill" class="form-control" />
                 <span asp-validation-for="Skill" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ArmorClass" class="control-label"></label>
-                <input asp-for="ArmorClass" class="form-control" />
+                <label asp-for="ArmorClass" class="control-label">Armor Class</label>
+                <input type="number" min="0" asp-for="ArmorClass" class="form-control" />
                 <span asp-validation-for="ArmorClass" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Initiative" class="control-label"></label>
+                <label asp-for="Initiative" class="control-label">Initiative</label>
                 <input asp-for="Initiative" class="form-control" />
                 <span asp-validation-for="Initiative" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Speed" class="control-label"></label>
+                <label asp-for="Speed" class="control-label">Speed</label>
                 <input asp-for="Speed" class="form-control" />
                 <span asp-validation-for="Speed" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HitPointsMax" class="control-label"></label>
-                <input asp-for="HitPointsMax" class="form-control" />
+                <label asp-for="HitPointsMax" class="control-label">Max Hit Points</label>
+                <input type="number" min="1" asp-for="HitPointsMax" class="form-control" />
                 <span asp-validation-for="HitPointsMax" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HitPointsCurrent" class="control-label"></label>
-                <input asp-for="HitPointsCurrent" class="form-control" />
+                <label asp-for="HitPointsCurrent" class="control-label">Current Hit Points</label>
+                <input type="number" min="0" asp-for="HitPointsCurrent" class="form-control" />
                 <span asp-validation-for="HitPointsCurrent" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HitPointsTemporary" class="control-label"></label>
-                <input asp-for="HitPointsTemporary" class="form-control" />
+                <label asp-for="HitPointsTemporary" class="control-label">Temporary Hit Points</label>
+                <input type="number" min="0" asp-for="HitPointsTemporary" class="form-control" />
                 <span asp-validation-for="HitPointsTemporary" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HitDice" class="control-label"></label>
+                <label asp-for="HitDice" class="control-label">Hit Dice</label>
                 <input asp-for="HitDice" class="form-control" />
                 <span asp-validation-for="HitDice" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeathSaves_Successes" class="control-label"></label>
+                <label asp-for="DeathSaves_Successes" class="control-label">Death Saves Successes</label>
                 <input asp-for="DeathSaves_Successes" class="form-control" />
                 <span asp-validation-for="DeathSaves_Successes" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeathSaves_Failures" class="control-label"></label>
+                <label asp-for="DeathSaves_Failures" class="control-label"> Death Saves Failures</label>
                 <input asp-for="DeathSaves_Failures" class="form-control" />
                 <span asp-validation-for="DeathSaves_Failures" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PersonalityTraits" class="control-label"></label>
+                <label asp-for="PersonalityTraits" class="control-label">Personality Traits</label>
                 <input asp-for="PersonalityTraits" class="form-control" />
                 <span asp-validation-for="PersonalityTraits" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ideals" class="control-label"></label>
+                <label asp-for="Ideals" class="control-label">Ideals</label>
                 <input asp-for="Ideals" class="form-control" />
                 <span asp-validation-for="Ideals" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Bonds" class="control-label"></label>
+                <label asp-for="Bonds" class="control-label">Bonds</label>
                 <input asp-for="Bonds" class="form-control" />
                 <span asp-validation-for="Bonds" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Flaws" class="control-label"></label>
+                <label asp-for="Flaws" class="control-label">Flaws</label>
                 <input asp-for="Flaws" class="form-control" />
                 <span asp-validation-for="Flaws" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Features" class="control-label"></label>
+                <label asp-for="Features" class="control-label">Features</label>
                 <input asp-for="Features" class="form-control" />
                 <span asp-validation-for="Features" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Traits" class="control-label"></label>
+                <label asp-for="Traits" class="control-label">Traits</label>
                 <input asp-for="Traits" class="form-control" />
                 <span asp-validation-for="Traits" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Age" class="control-label"></label>
-                <input asp-for="Age" class="form-control" />
+                <label asp-for="Age" class="control-label">Age</label>
+                <input type="number" min="10" asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Weight" class="control-label"></label>
+                <label asp-for="Weight" class="control-label">Weight</label>
                 <input asp-for="Weight" class="form-control" />
                 <span asp-validation-for="Weight" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EyeColor" class="control-label"></label>
+                <label asp-for="EyeColor" class="control-label">Eye Color</label>
                 <input asp-for="EyeColor" class="form-control" />
                 <span asp-validation-for="EyeColor" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Skin" class="control-label"></label>
+                <label asp-for="Skin" class="control-label">Skin</label>
                 <input asp-for="Skin" class="form-control" />
                 <span asp-validation-for="Skin" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Hair" class="control-label"></label>
+                <label asp-for="Hair" class="control-label">Hair</label>
                 <input asp-for="Hair" class="form-control" />
                 <span asp-validation-for="Hair" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Appearance" class="control-label"></label>
+                <label asp-for="Appearance" class="control-label">Appearance</label>
                 <input asp-for="Appearance" class="form-control" />
                 <span asp-validation-for="Appearance" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Backstory" class="control-label"></label>
+                <label asp-for="Backstory" class="control-label">Backstory</label>
                 <input asp-for="Backstory" class="form-control" />
                 <span asp-validation-for="Backstory" class="text-danger"></span>
             </div>

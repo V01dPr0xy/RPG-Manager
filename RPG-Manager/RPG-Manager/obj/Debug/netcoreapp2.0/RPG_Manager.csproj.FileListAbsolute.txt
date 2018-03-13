@@ -31,3 +31,14 @@ C:\Users\Vokundiiv\Videos\javascript-winter\MTM282_ExpressServicesProjekt\RPG-Ma
 C:\Users\Vokundiiv\Videos\javascript-winter\MTM282_ExpressServicesProjekt\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.AssemblyInfo.cs
 C:\Users\Vokundiiv\Videos\javascript-winter\MTM282_ExpressServicesProjekt\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.dll
 C:\Users\Vokundiiv\Videos\javascript-winter\MTM282_ExpressServicesProjekt\RPG-Manager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.pdb
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG_Manager.deps.json
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG_Manager.runtimeconfig.json
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG_Manager.runtimeconfig.dev.json
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG_Manager.dll
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\bin\Debug\netcoreapp2.0\RPG_Manager.pdb
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.csprojResolveAssemblyReference.cache
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.csproj.CoreCompileInputs.cache
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.AssemblyInfoInputs.cache
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.AssemblyInfo.cs
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.dll
+C:\Users\BlazingHoundoom\Documents\Visual Studio 2017\Projects\RPGManager\RPG-Manager\RPG-Manager\obj\Debug\netcoreapp2.0\RPG_Manager.pdb

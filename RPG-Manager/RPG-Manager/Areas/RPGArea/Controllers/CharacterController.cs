@@ -20,7 +20,7 @@ namespace RPG_Manager.Areas.RPGArea.Controllers
             return View();
         }
 
-        [Route("Characters")]
+        //[Route("Characters")]
         public async Task<IActionResult> Characters()
         {
             return View(await Repo.List_Character());

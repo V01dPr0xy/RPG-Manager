@@ -1,0 +1,25 @@
+﻿@model IEnumerable<RPG_Manager.Areas.RPGArea.Models.Character>
+@{
+    ViewData["Title"] = "Characters";
+}
+
+<h2>Characters</h2>
+<p>
+    @Html.ActionLink("Create New", "CreateCharacter")
+</p>
+<table>
+    <tr>
+
+    </tr>
+    @foreach(var character in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => character.Name)</td>
+            <td>@Html.DisplayFor(modelItem => character.PlayerName)</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id=character.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=character.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=character.ID })
+            </td>
+        </tr>
+    }
+</table>
